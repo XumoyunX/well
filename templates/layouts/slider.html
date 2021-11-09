@@ -1,0 +1,15 @@
+
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="slider">
+        <div class="slider__item active"><img src="{% static 'images/slin1.jpg' %}" alt="Life in the ocean" class="slider__image"></div>
+        <div class="slider__item"><img src="{% static 'images/slin2.jpg' %}" alt="Life in the ocean" class="slider__image"></div>
+        <div class="slider__item"><img src="{% static 'images/brian.jpg' %}" alt="Life in the ocean" class="slider__image"></div>
+        <div class="slider__item"><img src="{% static 'images/slin3.jpg' %}" alt="Life in the ocean" class="slider__image"></div>
+        <div class="slider__item"><img src="{% static 'images/slin4.jpg' %}" alt="Life in the ocean" class="slider__image"></div>
+        <button class="slider__prev"></button>
+        <button class="slider__next"></button>
+    </div>
+{% endblock  %}
+

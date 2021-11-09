@@ -1,0 +1,118 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+    {% include "layouts/header.html" %}
+    <!-- Start header -->
+    <div class="all-page-title page-breadcrumb">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>O нас</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Start About -->
+    <div class="about-section-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="{% static "images/pau.jpg" %}" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="inner-column">
+                        <h1><span>Well Добро пожаловать в ресторан</span></h1>
+                        <p> <b style="font-size: 24px; color: #333333">Well</b> Директор компании Базарбаев Дилмухаммад Байрамбаевич. Бренд <b style="font-size: 24px; color: #333333">Well.uz</b> неактивен 5 лет
+                            растет. Ну Ташкент также находится в VEGA CENTER.
+                            В атласе в Кашкадарье 4 этажа.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="inner-pt">
+                        <h2><b>О компании</b></h2>
+                        <p>
+
+                            История компании <b style="font-size: 24px; color: #333333">Well</b> работает на быстрорастущем рынке Республики
+                            Узбекистан и ориентирована на удовлетворение растущего спроса рынка.
+
+                            Компания продемонстрировала отличные результаты за последние 5 лет и устойчиво растет за
+                            счет основного направления бизнеса: Продукты питания и напитки.
+
+                            Наш <b style="font-size: 24px; color: #333333">Well</b> является одним из узнаваемых среди своего сегмента и высоко ценится в
+                            Узбекистане. Но мы стремимся становится еще лучше и соответствовать мировым стандартам.
+                            <b style="font-size: 24px; color: #333333">Well</b> работает на рынке с 2016 года начав всего с одного филиала. И всего за 5 лет
+                            открыли более 3 филиалов по Республики Узбекистан.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Menu -->
+{#    <div class="menu-box">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-lg-12">#}
+{#                    <div class="heading-title text-center">#}
+{#                        <h2>Maxsus Menu</h2>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="row">#}
+{#                <div class="col-lg-12">#}
+{#                    <div class="special-menu text-center">#}
+{#                        <div class="button-group filter-button-group">#}
+{#                            <button class="active" data-filter="*">All</button>#}
+{#                            {% for i in category %}#}
+{#                                <button data-filter=".cat_{{ i.id }}">{{ i.name }}</button>#}
+{#                            {% endfor %}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <div class="row special-list">#}
+{#                {% for i in category %}#}
+{#                    {% for j in product %}#}
+{#                        {% if i.id == j.category_id %}#}
+{#                            <div class="col-lg-4 col-md-6 special-grid cat_{{ i.id }}">#}
+{#                                <div class="gallery-single fix">#}
+{#                                    <img style="height: 318px !important;" src="{{ j.img.url }}" class="img-fluid"#}
+{#                                         alt="Image">#}
+{#                                    <div class="why-text">#}
+{#                                        <h4>{{ j.name }}</h4>#}
+{#                                        <p>{{ j.context }}</p>#}
+{#                                        <h5>{{ j.price }}</h5>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        {% endif %}#}
+{#                    {% endfor %}#}
+{#                {% endfor %}#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+    <!-- End Menu -->
+{% include "layouts/reviews.html" %}
+    <!-- Start Contact info -->
+
+    {% include 'layouts/tele.html' %}
+    <!-- End Contact info -->
+
+    <!-- Start Footer -->
+    {% include 'layouts/footer.html' %}
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+{% endblock %}

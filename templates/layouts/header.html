@@ -1,0 +1,28 @@
+
+{% load static %}
+
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<div class="container">
+				<a class="navbar-brand" href="{% url 'main:index' %}">
+					<img width="100px" height="100px;"  style="border-radius: 50%; border: 3px solid white" src="{% static "images/well_uz.jpg" %}" alt="" />
+                </a>
+                <p class="navbar-brand_text" style="color: black; font-size: 25px ; padding-top: 15px">Well big Taste</p>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item {{ h_active }}"><a class="nav-link" href="{% url "main:index" %}">Главная</a></li>
+						<li class="nav-item {{ m_active }}"><a class="nav-link" href="{% url 'main:menu' %}">Меню</a></li>
+						<li class="nav-item {{ a_active }}"><a class="nav-link" href="{% url 'main:about' %}">О нас</a></li>
+						<li class="nav-item"{{ a_active }}><a class="nav-link" href="{% url 'main:con' %}">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+
